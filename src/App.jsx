@@ -5,13 +5,10 @@ function App() {
   const [Fname, setfname] = useState("");
   const [Lname, setlname] = useState("");
   const [showText, setShowText] = useState(false);
-  let flag = false;
 
   const setText = (event) => {
     event.preventDefault();
-    if (!Fname || !Lname) {
-      setError;
-    }
+ 
     setShowText(true);
   };
 
@@ -44,7 +41,7 @@ function App() {
       {showText && (
         <div>
           <p>
-            Full Name:{Fname} {Lname}
+            Full Name: {Fname} {Lname}
           </p>
         </div>
       )}
