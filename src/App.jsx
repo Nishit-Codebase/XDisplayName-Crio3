@@ -44,8 +44,7 @@ function App() {
       {showText && (
         <div>
           <p>
-            Full Name:{Fname}
-            {Lname}
+            Full Name:{Fname} {Lname}
           </p>
         </div>
       )}
